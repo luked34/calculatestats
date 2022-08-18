@@ -13,6 +13,6 @@ public class AverageStrategy implements StrategyInf {
 
     @Override
     public String result() {
-        return Integer.toString(counter);
+        return Integer.toString(total > 0 ? (total / counter) : 0);
     }
 }
