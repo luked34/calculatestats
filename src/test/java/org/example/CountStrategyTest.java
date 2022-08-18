@@ -18,8 +18,4 @@ class CountStrategyTest {
         strategy.apply(0);strategy.apply(0);strategy.apply(0);
         assertEquals("5", strategy.result());
     }
-
-    @Test
-    void result() {
-    }
 }
