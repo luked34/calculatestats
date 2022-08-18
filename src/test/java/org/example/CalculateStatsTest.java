@@ -17,4 +17,10 @@ class CalculateStatsTest {
     void testResult() {
         assertEquals(null, strategy.result());
     }
+
+    @Test
+    void testApply() {
+        strategy.apply(1);
+        assertEquals("1", strategy.result());
+    }
 }
