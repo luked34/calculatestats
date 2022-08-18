@@ -4,15 +4,15 @@ public class AverageStrategy implements StrategyInf {
 
     int counter = 0;
 
-    int total = 0;
-
+    double total= 0D;
     @Override
     public void apply(int item) {
         counter++;
+        total+=item;
     }
 
     @Override
     public String result() {
-        return Integer.toString(total > 0 ? (total / counter) : 0);
+        return Double.toString(total > 0 ? (total / counter) : 0D);
     }
 }
