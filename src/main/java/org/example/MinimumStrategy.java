@@ -6,7 +6,7 @@ public class MinimumStrategy implements StrategyInf {
 
     @Override
     public void apply(int item) {
-        value = item;
+        if (value == null || value>item) value = item;
     }
 
     @Override

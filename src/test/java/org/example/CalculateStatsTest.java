@@ -23,4 +23,11 @@ class CalculateStatsTest {
         strategy.apply(1);
         assertEquals("1", strategy.result());
     }
+
+    @Test
+    void testApplyTwice() {
+        strategy.apply(1);
+        strategy.apply(2);
+        assertEquals("1", strategy.result());
+    }
 }
